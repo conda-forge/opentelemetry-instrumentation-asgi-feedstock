@@ -25,10 +25,8 @@ requirements:
     - opentelemetry-semantic-conventions ==0.26b1
     - opentelemetry-util-http ==0.26b1
     - python >=3.6
-    # - opentelemetry-test ==0.24b0
-    # - asgiref ~=3.0
+    - asgiref ~=3.0
     # - opentelemetry-test-utils ==0.26b1
-    # - asgiref ~=3.0
 
 test:
   imports:
