@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-asgi" %}
-{% set version = "0.40b0" %}
+{% set version = "0.41b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_asgi-{{ version }}.tar.gz
-  sha256: 98678ef9e3856746dd52b11b8c6ce258acc70ecb910c9053ad7aaabab8fa71f2
+  sha256: 921244138b37a9a25edf2153f1c248f16f98610ee8d840b25fd7bf6b165e4d72
 
 build:
   noarch: python
@@ -23,9 +23,9 @@ requirements:
     - python >=3.7
     - asgiref ~=3.0
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation ==0.40b0
-    - opentelemetry-semantic-conventions ==0.40b0
-    - opentelemetry-util-http ==0.40b0
+    - opentelemetry-instrumentation ==0.41b0
+    - opentelemetry-semantic-conventions ==0.41b0
+    - opentelemetry-util-http ==0.41b0
     # - opentelemetry-test-utils ==0.37b0
     # - opentelemetry-instrumentation-asgi 
     # - opentelemetry-test-utils ==0.38b0
@@ -33,6 +33,8 @@ requirements:
     # - opentelemetry-test-utils ==0.39b0
     # - opentelemetry-instrumentation-asgi 
     # - opentelemetry-test-utils ==0.40b0
+    # - opentelemetry-instrumentation-asgi 
+    # - opentelemetry-test-utils ==0.41b0
     # - opentelemetry-instrumentation-asgi 
 
 test:
