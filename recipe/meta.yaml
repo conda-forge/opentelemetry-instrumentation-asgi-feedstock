@@ -1,13 +1,13 @@
 {% set name = "opentelemetry-instrumentation-asgi" %}
-{% set version = "0.65b0" %}
+{% set version = "0.66b0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_asgi-{{ version }}.tar.gz
-  sha256: 892bca67c56522ffa85a8a83cf934d7b50b3be2132e45cbee705825f0a5ba426
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_asgi-{{ version }}.tar.gz
+  sha256: ab3f9c86aaddbf9c332534e0fce6c918cbacdab7a33951825a9ebba6b2fb7200
 
 build:
   noarch: python
@@ -23,9 +23,9 @@ requirements:
     - python >={{ python_min }}
     - asgiref ~=3.0
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation ==0.65b0
-    - opentelemetry-semantic-conventions ==0.65b0
-    - opentelemetry-util-http ==0.65b0
+    - opentelemetry-instrumentation ==0.66b0
+    - opentelemetry-semantic-conventions ==0.66b0
+    - opentelemetry-util-http ==0.66b0
 
 test:
   imports:
